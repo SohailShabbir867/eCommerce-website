@@ -16,8 +16,12 @@ function App() {
 
   return (
     <>
-      <Navbar /> {/* ✅ Navbar is shown on all pages */}
+      <Navbar />
       <Routes>
+        {/* 👇 Default route that matches when no path is specified */}
+        <Route path="/" element={<Home count={count} setCount={setCount} />} />
+        
+        {/* Other routes */}
         <Route path="/home" element={<Home count={count} setCount={setCount} />} />
         <Route path="/about" element={<About count={count} setCount={setCount} />} />
         <Route path="/products" element={<Products count={count} setCount={setCount} />} />
