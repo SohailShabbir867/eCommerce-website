@@ -1,6 +1,8 @@
 import React from 'react';
 import Productimage from '../assets/Iphone3.png';
+import image from "../assets/applewatch.png"; 
 import { useNavigate } from "react-router-dom";
+// Update this import path as needed
 
 const App = () => {
   const navigate = useNavigate(); // ✅ useNavigate inside the component
@@ -41,6 +43,42 @@ const App = () => {
       name: 'AirPods Pro (2nd Gen)',
       price: '$249',
       imageUrl: Productimage
+    },
+        {
+      id: 99,
+      name: 'iPhone 15 Pro Max',
+      price: '$1,199',
+      imageUrl: Productimage
+    },
+      {
+      id: 0,
+      name: 'iPhone 15 Pro Max',
+      price: '$1,199',
+      imageUrl: image
+    },
+    {
+      id: 1,
+      name: 'MacBook Air M3',
+      price: '$1,299',
+      imageUrl: image
+    },
+    {
+      id: 2,
+      name: 'iPad Pro M4',
+      price: '$999',
+      imageUrl: image
+    },
+    {
+      id: 3,
+      name: 'Apple Watch Series 9',
+      price: '$399',
+      imageUrl: image
+    },
+    {
+      id: 4,
+      name: 'AirPods Pro (2nd Gen)',
+      price: '$249',
+      imageUrl: image
     }
   ];
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Homeimage  from "../assets/Image2.png"// Update this import path as needed
-
+import HomeScetion1 from "../pages/Homesection1.jsx"; // Import the HomeSection component
+import Homesection2 from "../pages/Homesection2.jsx"; // Import the HomeSection2 component
 const HomeSection = () => {
   const navigate = useNavigate(); // useNavigate is a hook for programmatic navigation
 
@@ -35,6 +36,8 @@ const HomeSection = () => {
           />
         </div>
       </div>
+      <HomeScetion1/>
+      <Homesection2/>
     </div>
   );
 };

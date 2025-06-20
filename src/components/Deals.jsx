@@ -1,6 +1,8 @@
 import React from 'react';
 import ProductImage from '../assets/applewatch.png'; 
+import Productimage from '../assets/Iphone3.png';
 import { useNavigate } from 'react-router-dom';
+
 
 const Deals = () => {
   const navigate = useNavigate(); // ✅ useNavigate inside the component
@@ -34,6 +36,36 @@ const Deals = () => {
       discountPercent: 25,
       imageUrl: ProductImage,
     },
+        {
+          id: 5,
+          name: 'iPhone 15 Pro Max',
+          price: '$1,199',
+          imageUrl: Productimage
+        },
+          {
+          id: 6,
+          name: 'iPhone 15 Pro Max',
+          price: '$1,199',
+          imageUrl: Productimage
+        },
+        {
+          id: 7,
+          name: 'MacBook Air M3',
+          price: '$1,299',
+          imageUrl: Productimage
+        },
+        {
+          id: 8,
+          name: 'iPad Pro M4',
+          price: '$999',
+          imageUrl: Productimage
+        },
+          {
+          id: 9,
+          name: 'iPad Pro M4',
+          price: '$999',
+          imageUrl: Productimage
+        },
   ];
 
   return (
